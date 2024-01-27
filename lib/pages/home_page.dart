@@ -25,6 +25,9 @@ class HomePage extends StatelessWidget {
         title: Center(
           child: Text('Home'),
         ),
+        backgroundColor: Colors.transparent,
+          foregroundColor: Colors.grey,
+        elevation: 0,
         // actions: [
         //   IconButton(onPressed: logout,
         //       icon: Icon(Icons.logout))
@@ -71,6 +74,8 @@ class HomePage extends StatelessWidget {
               MaterialPageRoute(
                 builder: (context) => ChatPage(
                   receiveEmail: userData["email"],
+                  receiveID: userData["uid"],
+
                 ),
               ));
         },
